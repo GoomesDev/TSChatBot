@@ -1,1 +1,1 @@
-Teste
+Beta version w/ Text Generation.
