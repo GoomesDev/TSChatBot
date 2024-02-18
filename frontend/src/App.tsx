@@ -2,8 +2,6 @@ import ChatBot from "./components/ChatBox"
 
 function App() {
 
-
-
   return (
     <>
       <ChatBot />
@@ -11,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
