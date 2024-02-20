@@ -1,4 +1,8 @@
-import React from "react"
+import React ,{
+  useState, 
+  useRef,
+  useEffect 
+} from "react"
 import { 
     Paper,
     TextField,
@@ -7,14 +11,9 @@ import {
 } from "@mui/material"
 import SendIcon from '@mui/icons-material/Send'
 import axios from "axios"
-import { 
-  useState, 
-  useRef,
-  useEffect 
-} from "react"
 
 interface ChatResponse {
-  generated_text: string;
+  answer: string;
 }
 
 const paperStyle = {
@@ -79,7 +78,7 @@ const userBalloon = {
 
 const ChatBot = () => {
   const [input, setInput] = useState('')
-  const [responses, setResponses] = useState<ChatResponse[]>([])
+  const [responses, setResponses] = useState<string[]>([])
   const [messagesSent, setMessagesSent] = useState<string[]>([])
   const chatAreaRef = useRef<HTMLDivElement>(null)
 
@@ -87,8 +86,8 @@ const ChatBot = () => {
     try {
       const response = await axios.post('http://localhost:8000/run', { input })
       console.log(response.data)
-      const justRes: { response: ChatResponse } = response.data
-      setResponses(prevResponses => [...prevResponses, justRes.response])
+      const { answer } = response.data
+      setResponses(prevResponses => [...prevResponses, answer])
       setMessagesSent(prevMessagesSent => [...prevMessagesSent, input])
     } catch {
       console.log('Error')
@@ -115,10 +114,10 @@ const ChatBot = () => {
                   {messagesSent[index]}
                 </div>
                 <div style={chatBalloon}>
-                  {response.generated_text}
-                </div>
-              </React.Fragment>
-            ))}
+                {response}
+              </div>
+            </React.Fragment>
+          ))}
             </div>
 
             <TextField
