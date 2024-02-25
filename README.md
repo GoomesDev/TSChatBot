@@ -1,1 +1,1 @@
-Beta version w/ Text Generation.
+Beta version powered w/ CoffeeRobot.
