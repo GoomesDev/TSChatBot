@@ -7,14 +7,14 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 const port = 8000
-const manager = new NlpManager({ languages: ['en'] })
+const manager = new NlpManager({ languages: ['pt-br'] })
 
 manager.load('./model.nlp')
 
 app.post('/run', async (req, res) => {
     try {
         const { input } = req.body
-        let response = await manager.process('en', input)
+        let response = await manager.process('pt-br', input)
         res.json({ answer: response.answer })
     } catch {
         console.error(error)

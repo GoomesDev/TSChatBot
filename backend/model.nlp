@@ -1,7 +1,7 @@
 {
   "settings": {
     "languages": [
-      "en"
+      "pt-br"
     ],
     "tag": "nlp",
     "threshold": 0.5,
@@ -16,15 +16,15 @@
       "tag": "nlu-manager"
     },
     "locales": [
-      "en"
+      "pt"
     ],
     "languageNames": {},
     "domainManagers": {
-      "en": {
+      "pt": {
         "settings": {
-          "locale": "en",
+          "locale": "pt",
           "trainByDomain": false,
-          "tag": "domain-manager-en",
+          "tag": "domain-manager-pt",
           "nluByDomain": {
             "default": {
               "className": "NeuralNlu",
@@ -34,570 +34,238 @@
           "useStemDict": true
         },
         "stemDict": {
-          "hi": {
-            "intent": "greet",
+          "caf,e,espress,o,que": {
+            "intent": "cafe_espresso",
             "domain": "default"
           },
-          "hello": {
-            "intent": "greet",
+          "caf,espress,expliqu": {
+            "intent": "cafe_espresso",
             "domain": "default"
           },
-          "are,hi,how,you": {
-            "intent": "greet",
+          "caf,defin,espress": {
+            "intent": "cafe_espresso",
             "domain": "default"
           },
-          "up,what": {
-            "intent": "greet",
+          "espress,o,que,signif": {
+            "intent": "cafe_espresso",
             "domain": "default"
           },
-          "good,morn": {
-            "intent": "greet",
+          "caf,e,latt,o,que": {
+            "intent": "cafe_latte",
             "domain": "default"
           },
-          "afternoon,good": {
-            "intent": "greet",
+          "caf,expliqu,latt": {
+            "intent": "cafe_latte",
             "domain": "default"
           },
-          "even,good": {
-            "intent": "greet",
+          "caf,defin,latt": {
+            "intent": "cafe_latte",
             "domain": "default"
           },
-          "howdi": {
-            "intent": "greet",
+          "latt,o,que,signif": {
+            "intent": "cafe_latte",
             "domain": "default"
           },
-          "hey": {
-            "intent": "greet",
+          "caf,cappuccin,e,o,que": {
+            "intent": "cafe_cappuccino",
             "domain": "default"
           },
-          "are,do,hey,how,you": {
-            "intent": "greet",
+          "caf,cappuccin,expliqu": {
+            "intent": "cafe_cappuccino",
             "domain": "default"
           },
-          "morn": {
-            "intent": "greet",
+          "caf,cappuccin,defin": {
+            "intent": "cafe_cappuccino",
             "domain": "default"
           },
-          "hey,there": {
-            "intent": "greet",
+          "cappuccin,o,que,signif": {
+            "intent": "cafe_cappuccino",
             "domain": "default"
           },
-          "yo": {
-            "intent": "greet",
+          "caf,com,espress,faz": {
+            "intent": "fazer_cafe_espresso",
             "domain": "default"
           },
-          "can,help,me,you": {
-            "intent": "help",
+          "caf,com,espress,prepar": {
+            "intent": "fazer_cafe_espresso",
             "domain": "default"
           },
-          "assist,i,need": {
-            "intent": "help",
+          "a,caf,de,e,espress,qual,receit": {
+            "intent": "fazer_cafe_espresso",
             "domain": "default"
           },
-          "help,pleas": {
-            "intent": "help",
+          "bom,caf,com,espress,faz,um": {
+            "intent": "fazer_cafe_espresso",
             "domain": "default"
           },
-          "am,assist,can,i,stuck,you": {
-            "intent": "help",
+          "caf,com,faz,latt": {
+            "intent": "fazer_cafe_latte",
             "domain": "default"
           },
-          "a,could,hand,lend,you": {
-            "intent": "help",
+          "caf,com,latt,prepar": {
+            "intent": "fazer_cafe_latte",
             "domain": "default"
           },
-          "goodby": {
-            "intent": "goodbye",
+          "a,caf,de,e,latt,qual,receit": {
+            "intent": "fazer_cafe_latte",
             "domain": "default"
           },
-          "later,see,you": {
-            "intent": "goodbye",
+          "bom,caf,com,faz,latt,um": {
+            "intent": "fazer_cafe_latte",
             "domain": "default"
           },
-          "bye,for,now": {
-            "intent": "goodbye",
+          "caf,cappuccin,com,faz": {
+            "intent": "fazer_cafe_cappuccino",
             "domain": "default"
           },
-          "catch,later,you": {
-            "intent": "goodbye",
+          "caf,cappuccin,com,prepar": {
+            "intent": "fazer_cafe_cappuccino",
             "domain": "default"
           },
-          "thank,you": {
-            "intent": "thanks",
+          "a,caf,cappuccin,de,e,qual,receit": {
+            "intent": "fazer_cafe_cappuccino",
             "domain": "default"
           },
-          "a,lot,thank": {
-            "intent": "thanks",
-            "domain": "default"
-          },
-          "appreci,i,it": {
-            "intent": "thanks",
-            "domain": "default"
-          },
-          "for,help,thank,your": {
-            "intent": "thanks",
-            "domain": "default"
-          },
-          "a,creat,do,how,i,in,loop,python": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "a,for,in,is,javascript,loop,syntax,the,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "can,explain,object-ori,program,you": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "develop,doe,for,in,mvc,stand,web,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "a,can,for,good,learn,react,recommend,tutori,you": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "are,beginner-friend,languag,program,some,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "a,code,do,error,fix,how,i,in,my,syntax": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "crash,do,i,if,is,my,program,should,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "are,common,data,in,program,structur,the,use,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "and,array,between,differ,explain,link,list,the": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "a,do,how,i,implement,in,python,stack": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "a,algorithm,is,sort,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "binari,explain,of,principl,search,the,work": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "a,bubbl,do,how,i,implement,sort": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "are,best,clean,code,for,practic,some,what,write": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "can,code,how,i,improv,my,of,perform,the": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "are,develop,essenti,for,technolog,the,web,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "a,api,creat,do,how,i,rest": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "attack,can,how,i,inject,prevent,sql": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "applic,are,common,in,secur,some,vulner,web,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "is,python,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "explain,languag,program,python": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "are,featur,of,python,the,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "is,javascript,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "explain,javascript,languag,program": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "are,featur,javascript,of,the,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "is,java,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "explain,java,languag,program": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "are,featur,java,of,the,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "is,rubi,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "explain,languag,program,rubi": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "are,featur,of,rubi,the,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "is,react,what": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "explain,framework,react": {
-            "intent": "programming",
-            "domain": "default"
-          },
-          "are,featur,of,react,the,what": {
-            "intent": "programming",
+          "bom,caf,cappuccin,com,faz,um": {
+            "intent": "fazer_cafe_cappuccino",
             "domain": "default"
           }
         },
         "intentDict": {
-          "greet": "default",
-          "help": "default",
-          "goodbye": "default",
-          "thanks": "default",
-          "programming": "default"
+          "cafe_espresso": "default",
+          "cafe_latte": "default",
+          "cafe_cappuccino": "default",
+          "fazer_cafe_espresso": "default",
+          "fazer_cafe_latte": "default",
+          "fazer_cafe_cappuccino": "default"
         },
         "sentences": [
           {
             "domain": "default",
-            "utterance": "Hi",
-            "intent": "greet"
+            "utterance": "O que é café espresso?",
+            "intent": "cafe_espresso"
           },
           {
             "domain": "default",
-            "utterance": "Hello",
-            "intent": "greet"
+            "utterance": "Explique café espresso.",
+            "intent": "cafe_espresso"
           },
           {
             "domain": "default",
-            "utterance": "Hi, how are you?",
-            "intent": "greet"
+            "utterance": "Defina café espresso.",
+            "intent": "cafe_espresso"
           },
           {
             "domain": "default",
-            "utterance": "Whats up?",
-            "intent": "greet"
+            "utterance": "O que significa espresso?",
+            "intent": "cafe_espresso"
           },
           {
             "domain": "default",
-            "utterance": "Good morning",
-            "intent": "greet"
+            "utterance": "O que é café latte?",
+            "intent": "cafe_latte"
           },
           {
             "domain": "default",
-            "utterance": "Good afternoon",
-            "intent": "greet"
+            "utterance": "Explique café latte.",
+            "intent": "cafe_latte"
           },
           {
             "domain": "default",
-            "utterance": "Good evening",
-            "intent": "greet"
+            "utterance": "Defina café latte.",
+            "intent": "cafe_latte"
           },
           {
             "domain": "default",
-            "utterance": "Howdy",
-            "intent": "greet"
+            "utterance": "O que significa latte?",
+            "intent": "cafe_latte"
           },
           {
             "domain": "default",
-            "utterance": "Hey",
-            "intent": "greet"
+            "utterance": "O que é café cappuccino?",
+            "intent": "cafe_cappuccino"
           },
           {
             "domain": "default",
-            "utterance": "Hey, how are you doing?",
-            "intent": "greet"
+            "utterance": "Explique café cappuccino.",
+            "intent": "cafe_cappuccino"
           },
           {
             "domain": "default",
-            "utterance": "Morning!",
-            "intent": "greet"
+            "utterance": "Defina café cappuccino.",
+            "intent": "cafe_cappuccino"
           },
           {
             "domain": "default",
-            "utterance": "Hey there",
-            "intent": "greet"
+            "utterance": "O que significa cappuccino?",
+            "intent": "cafe_cappuccino"
           },
           {
             "domain": "default",
-            "utterance": "Yo",
-            "intent": "greet"
+            "utterance": "Como fazer café espresso?",
+            "intent": "fazer_cafe_espresso"
           },
           {
             "domain": "default",
-            "utterance": "Can you help me?",
-            "intent": "help"
+            "utterance": "Como preparar café espresso?",
+            "intent": "fazer_cafe_espresso"
           },
           {
             "domain": "default",
-            "utterance": "I need assistance",
-            "intent": "help"
+            "utterance": "Qual é a receita de café espresso?",
+            "intent": "fazer_cafe_espresso"
           },
           {
             "domain": "default",
-            "utterance": "Help please!",
-            "intent": "help"
+            "utterance": "Como fazer um bom café espresso?",
+            "intent": "fazer_cafe_espresso"
           },
           {
             "domain": "default",
-            "utterance": "I'm stuck, can you assist?",
-            "intent": "help"
+            "utterance": "Como fazer café latte?",
+            "intent": "fazer_cafe_latte"
           },
           {
             "domain": "default",
-            "utterance": "Could you lend a hand?",
-            "intent": "help"
+            "utterance": "Como preparar café latte?",
+            "intent": "fazer_cafe_latte"
           },
           {
             "domain": "default",
-            "utterance": "Goodbye",
-            "intent": "goodbye"
+            "utterance": "Qual é a receita de café latte?",
+            "intent": "fazer_cafe_latte"
           },
           {
             "domain": "default",
-            "utterance": "See you later",
-            "intent": "goodbye"
+            "utterance": "Como fazer um bom café latte?",
+            "intent": "fazer_cafe_latte"
           },
           {
             "domain": "default",
-            "utterance": "Bye for now",
-            "intent": "goodbye"
+            "utterance": "Como fazer café cappuccino?",
+            "intent": "fazer_cafe_cappuccino"
           },
           {
             "domain": "default",
-            "utterance": "Catch you later",
-            "intent": "goodbye"
+            "utterance": "Como preparar café cappuccino?",
+            "intent": "fazer_cafe_cappuccino"
           },
           {
             "domain": "default",
-            "utterance": "Thank you",
-            "intent": "thanks"
+            "utterance": "Qual é a receita de café cappuccino?",
+            "intent": "fazer_cafe_cappuccino"
           },
           {
             "domain": "default",
-            "utterance": "Thanks a lot",
-            "intent": "thanks"
-          },
-          {
-            "domain": "default",
-            "utterance": "I appreciate it",
-            "intent": "thanks"
-          },
-          {
-            "domain": "default",
-            "utterance": "Thanks for your help",
-            "intent": "thanks"
-          },
-          {
-            "domain": "default",
-            "utterance": "How do I create a loop in Python?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What is the syntax for a for loop in JavaScript?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "Can you explain object-oriented programming?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What does MVC stand for in web development?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "Can you recommend a good tutorial for learning React?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What are some beginner-friendly programming languages?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "How do I fix a syntax error in my code?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What should I do if my program is crashing?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What are the common data structures used in programming?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "Explain the difference between arrays and linked lists",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "How do I implement a stack in Python?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What is a sorting algorithm?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "Explain the working principle of binary search",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "How do I implement a bubble sort?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What are some best practices for writing clean code?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "How can I improve the performance of my code?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What are the essential technologies for web development?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "How do I create a RESTful API?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "How can I prevent SQL injection attacks?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What are some common security vulnerabilities in web applications?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What is Python?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "Explain Python programming language",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What are the features of Python?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What is JavaScript?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "Explain JavaScript programming language",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What are the features of JavaScript?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What is Java?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "Explain Java programming language",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What are the features of Java?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What is Ruby?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "Explain Ruby programming language",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What are the features of Ruby?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What is React?",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "Explain React framework",
-            "intent": "programming"
-          },
-          {
-            "domain": "default",
-            "utterance": "What are the features of React?",
-            "intent": "programming"
+            "utterance": "Como fazer um bom café cappuccino?",
+            "intent": "fazer_cafe_cappuccino"
           }
         ],
         "domains": {
           "master_domain": {
             "settings": {
-              "locale": "en",
-              "tag": "nlu-en",
+              "locale": "pt",
+              "tag": "nlu-pt",
               "keepStopwords": true,
               "nonefeatureValue": 1,
               "nonedeltaMultiplier": 1.2,
@@ -607,626 +275,212 @@
               "log": true
             },
             "features": {
-              "hi": 1,
-              "hello": 1,
-              "how": 1,
-              "are": 1,
-              "you": 1,
-              "what": 1,
-              "up": 1,
-              "good": 1,
-              "morn": 1,
-              "afternoon": 1,
-              "even": 1,
-              "howdi": 1,
-              "hey": 1,
-              "do": 1,
-              "there": 1,
-              "yo": 1,
-              "can": 1,
-              "help": 1,
-              "me": 1,
-              "i": 1,
-              "need": 1,
-              "assist": 1,
-              "pleas": 1,
-              "am": 1,
-              "stuck": 1,
-              "could": 1,
-              "lend": 1,
+              "o": 1,
+              "que": 1,
+              "e": 1,
+              "caf": 1,
+              "espress": 1,
+              "expliqu": 1,
+              "defin": 1,
+              "signif": 1,
+              "latt": 1,
+              "cappuccin": 1,
+              "com": 1,
+              "faz": 1,
+              "prepar": 1,
+              "qual": 1,
               "a": 1,
-              "hand": 1,
-              "goodby": 1,
-              "see": 1,
-              "later": 1,
-              "bye": 1,
-              "for": 1,
-              "now": 1,
-              "catch": 1,
-              "thank": 1,
-              "lot": 1,
-              "appreci": 1,
-              "it": 1,
-              "your": 1,
-              "creat": 1,
-              "loop": 1,
-              "in": 1,
-              "python": 1,
-              "is": 1,
-              "the": 1,
-              "syntax": 1,
-              "javascript": 1,
-              "explain": 1,
-              "object-ori": 1,
-              "program": 1,
-              "doe": 1,
-              "mvc": 1,
-              "stand": 1,
-              "web": 1,
-              "develop": 1,
-              "recommend": 1,
-              "tutori": 1,
-              "learn": 1,
-              "react": 1,
-              "some": 1,
-              "beginner-friend": 1,
-              "languag": 1,
-              "fix": 1,
-              "error": 1,
-              "my": 1,
-              "code": 1,
-              "should": 1,
-              "if": 1,
-              "crash": 1,
-              "common": 1,
-              "data": 1,
-              "structur": 1,
-              "use": 1,
-              "differ": 1,
-              "between": 1,
-              "array": 1,
-              "and": 1,
-              "link": 1,
-              "list": 1,
-              "implement": 1,
-              "stack": 1,
-              "sort": 1,
-              "algorithm": 1,
-              "work": 1,
-              "principl": 1,
-              "of": 1,
-              "binari": 1,
-              "search": 1,
-              "bubbl": 1,
-              "best": 1,
-              "practic": 1,
-              "write": 1,
-              "clean": 1,
-              "improv": 1,
-              "perform": 1,
-              "essenti": 1,
-              "technolog": 1,
-              "rest": 1,
-              "api": 1,
-              "prevent": 1,
-              "sql": 1,
-              "inject": 1,
-              "attack": 1,
-              "secur": 1,
-              "vulner": 1,
-              "applic": 1,
-              "featur": 1,
-              "java": 1,
-              "rubi": 1,
-              "framework": 1
+              "receit": 1,
+              "de": 1,
+              "um": 1,
+              "bom": 1
             },
             "intents": {
-              "greet": 1,
-              "help": 1,
-              "goodbye": 1,
-              "thanks": 1,
-              "programming": 1
+              "cafe_espresso": 1,
+              "cafe_latte": 1,
+              "cafe_cappuccino": 1,
+              "fazer_cafe_espresso": 1,
+              "fazer_cafe_latte": 1,
+              "fazer_cafe_cappuccino": 1
             },
             "intentFeatures": {
-              "greet": {
-                "hi": 1,
-                "hello": 1,
-                "how": 1,
-                "are": 1,
-                "you": 1,
-                "what": 1,
-                "up": 1,
-                "good": 1,
-                "morn": 1,
-                "afternoon": 1,
-                "even": 1,
-                "howdi": 1,
-                "hey": 1,
-                "do": 1,
-                "there": 1,
-                "yo": 1
+              "cafe_espresso": {
+                "o": 1,
+                "que": 1,
+                "e": 1,
+                "caf": 1,
+                "espress": 1,
+                "expliqu": 1,
+                "defin": 1,
+                "signif": 1
               },
-              "help": {
-                "can": 1,
-                "you": 1,
-                "help": 1,
-                "me": 1,
-                "i": 1,
-                "need": 1,
-                "assist": 1,
-                "pleas": 1,
-                "am": 1,
-                "stuck": 1,
-                "could": 1,
-                "lend": 1,
+              "cafe_latte": {
+                "o": 1,
+                "que": 1,
+                "e": 1,
+                "caf": 1,
+                "latt": 1,
+                "expliqu": 1,
+                "defin": 1,
+                "signif": 1
+              },
+              "cafe_cappuccino": {
+                "o": 1,
+                "que": 1,
+                "e": 1,
+                "caf": 1,
+                "cappuccin": 1,
+                "expliqu": 1,
+                "defin": 1,
+                "signif": 1
+              },
+              "fazer_cafe_espresso": {
+                "com": 1,
+                "faz": 1,
+                "caf": 1,
+                "espress": 1,
+                "prepar": 1,
+                "qual": 1,
+                "e": 1,
                 "a": 1,
-                "hand": 1
+                "receit": 1,
+                "de": 1,
+                "um": 1,
+                "bom": 1
               },
-              "goodbye": {
-                "goodby": 1,
-                "see": 1,
-                "you": 1,
-                "later": 1,
-                "bye": 1,
-                "for": 1,
-                "now": 1,
-                "catch": 1
-              },
-              "thanks": {
-                "thank": 1,
-                "you": 1,
+              "fazer_cafe_latte": {
+                "com": 1,
+                "faz": 1,
+                "caf": 1,
+                "latt": 1,
+                "prepar": 1,
+                "qual": 1,
+                "e": 1,
                 "a": 1,
-                "lot": 1,
-                "i": 1,
-                "appreci": 1,
-                "it": 1,
-                "for": 1,
-                "your": 1,
-                "help": 1
+                "receit": 1,
+                "de": 1,
+                "um": 1,
+                "bom": 1
               },
-              "programming": {
-                "how": 1,
-                "do": 1,
-                "i": 1,
-                "creat": 1,
+              "fazer_cafe_cappuccino": {
+                "com": 1,
+                "faz": 1,
+                "caf": 1,
+                "cappuccin": 1,
+                "prepar": 1,
+                "qual": 1,
+                "e": 1,
                 "a": 1,
-                "loop": 1,
-                "in": 1,
-                "python": 1,
-                "what": 1,
-                "is": 1,
-                "the": 1,
-                "syntax": 1,
-                "for": 1,
-                "javascript": 1,
-                "can": 1,
-                "you": 1,
-                "explain": 1,
-                "object-ori": 1,
-                "program": 1,
-                "doe": 1,
-                "mvc": 1,
-                "stand": 1,
-                "web": 1,
-                "develop": 1,
-                "recommend": 1,
-                "good": 1,
-                "tutori": 1,
-                "learn": 1,
-                "react": 1,
-                "are": 1,
-                "some": 1,
-                "beginner-friend": 1,
-                "languag": 1,
-                "fix": 1,
-                "error": 1,
-                "my": 1,
-                "code": 1,
-                "should": 1,
-                "if": 1,
-                "crash": 1,
-                "common": 1,
-                "data": 1,
-                "structur": 1,
-                "use": 1,
-                "differ": 1,
-                "between": 1,
-                "array": 1,
-                "and": 1,
-                "link": 1,
-                "list": 1,
-                "implement": 1,
-                "stack": 1,
-                "sort": 1,
-                "algorithm": 1,
-                "work": 1,
-                "principl": 1,
-                "of": 1,
-                "binari": 1,
-                "search": 1,
-                "bubbl": 1,
-                "best": 1,
-                "practic": 1,
-                "write": 1,
-                "clean": 1,
-                "improv": 1,
-                "perform": 1,
-                "essenti": 1,
-                "technolog": 1,
-                "rest": 1,
-                "api": 1,
-                "prevent": 1,
-                "sql": 1,
-                "inject": 1,
-                "attack": 1,
-                "secur": 1,
-                "vulner": 1,
-                "applic": 1,
-                "featur": 1,
-                "java": 1,
-                "rubi": 1,
-                "framework": 1
+                "receit": 1,
+                "de": 1,
+                "um": 1,
+                "bom": 1
               }
             },
             "featuresToIntent": {
-              "hi": [
-                "greet"
+              "o": [
+                "cafe_espresso",
+                "cafe_latte",
+                "cafe_cappuccino"
               ],
-              "hello": [
-                "greet"
+              "que": [
+                "cafe_espresso",
+                "cafe_latte",
+                "cafe_cappuccino"
               ],
-              "how": [
-                "greet",
-                "programming"
+              "e": [
+                "cafe_espresso",
+                "cafe_latte",
+                "cafe_cappuccino",
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
               ],
-              "are": [
-                "greet",
-                "programming"
+              "caf": [
+                "cafe_espresso",
+                "cafe_latte",
+                "cafe_cappuccino",
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
               ],
-              "you": [
-                "greet",
-                "help",
-                "goodbye",
-                "thanks",
-                "programming"
+              "espress": [
+                "cafe_espresso",
+                "fazer_cafe_espresso"
               ],
-              "what": [
-                "greet",
-                "programming"
+              "expliqu": [
+                "cafe_espresso",
+                "cafe_latte",
+                "cafe_cappuccino"
               ],
-              "up": [
-                "greet"
+              "defin": [
+                "cafe_espresso",
+                "cafe_latte",
+                "cafe_cappuccino"
               ],
-              "good": [
-                "greet",
-                "programming"
+              "signif": [
+                "cafe_espresso",
+                "cafe_latte",
+                "cafe_cappuccino"
               ],
-              "morn": [
-                "greet"
+              "latt": [
+                "cafe_latte",
+                "fazer_cafe_latte"
               ],
-              "afternoon": [
-                "greet"
+              "cappuccin": [
+                "cafe_cappuccino",
+                "fazer_cafe_cappuccino"
               ],
-              "even": [
-                "greet"
+              "com": [
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
               ],
-              "howdi": [
-                "greet"
+              "faz": [
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
               ],
-              "hey": [
-                "greet"
+              "prepar": [
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
               ],
-              "do": [
-                "greet",
-                "programming"
-              ],
-              "there": [
-                "greet"
-              ],
-              "yo": [
-                "greet"
-              ],
-              "can": [
-                "help",
-                "programming"
-              ],
-              "help": [
-                "help",
-                "thanks"
-              ],
-              "me": [
-                "help"
-              ],
-              "i": [
-                "help",
-                "thanks",
-                "programming"
-              ],
-              "need": [
-                "help"
-              ],
-              "assist": [
-                "help"
-              ],
-              "pleas": [
-                "help"
-              ],
-              "am": [
-                "help"
-              ],
-              "stuck": [
-                "help"
-              ],
-              "could": [
-                "help"
-              ],
-              "lend": [
-                "help"
+              "qual": [
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
               ],
               "a": [
-                "help",
-                "thanks",
-                "programming"
-              ],
-              "hand": [
-                "help"
-              ],
-              "goodby": [
-                "goodbye"
-              ],
-              "see": [
-                "goodbye"
-              ],
-              "later": [
-                "goodbye"
-              ],
-              "bye": [
-                "goodbye"
-              ],
-              "for": [
-                "goodbye",
-                "thanks",
-                "programming"
-              ],
-              "now": [
-                "goodbye"
-              ],
-              "catch": [
-                "goodbye"
-              ],
-              "thank": [
-                "thanks"
-              ],
-              "lot": [
-                "thanks"
-              ],
-              "appreci": [
-                "thanks"
-              ],
-              "it": [
-                "thanks"
-              ],
-              "your": [
-                "thanks"
-              ],
-              "creat": [
-                "programming"
-              ],
-              "loop": [
-                "programming"
-              ],
-              "in": [
-                "programming"
-              ],
-              "python": [
-                "programming"
-              ],
-              "is": [
-                "programming"
-              ],
-              "the": [
-                "programming"
-              ],
-              "syntax": [
-                "programming"
-              ],
-              "javascript": [
-                "programming"
-              ],
-              "explain": [
-                "programming"
-              ],
-              "object-ori": [
-                "programming"
-              ],
-              "program": [
-                "programming"
-              ],
-              "doe": [
-                "programming"
-              ],
-              "mvc": [
-                "programming"
-              ],
-              "stand": [
-                "programming"
-              ],
-              "web": [
-                "programming"
-              ],
-              "develop": [
-                "programming"
-              ],
-              "recommend": [
-                "programming"
-              ],
-              "tutori": [
-                "programming"
-              ],
-              "learn": [
-                "programming"
-              ],
-              "react": [
-                "programming"
-              ],
-              "some": [
-                "programming"
-              ],
-              "beginner-friend": [
-                "programming"
-              ],
-              "languag": [
-                "programming"
-              ],
-              "fix": [
-                "programming"
-              ],
-              "error": [
-                "programming"
-              ],
-              "my": [
-                "programming"
-              ],
-              "code": [
-                "programming"
-              ],
-              "should": [
-                "programming"
-              ],
-              "if": [
-                "programming"
-              ],
-              "crash": [
-                "programming"
-              ],
-              "common": [
-                "programming"
-              ],
-              "data": [
-                "programming"
-              ],
-              "structur": [
-                "programming"
-              ],
-              "use": [
-                "programming"
-              ],
-              "differ": [
-                "programming"
-              ],
-              "between": [
-                "programming"
-              ],
-              "array": [
-                "programming"
-              ],
-              "and": [
-                "programming"
-              ],
-              "link": [
-                "programming"
-              ],
-              "list": [
-                "programming"
-              ],
-              "implement": [
-                "programming"
-              ],
-              "stack": [
-                "programming"
-              ],
-              "sort": [
-                "programming"
-              ],
-              "algorithm": [
-                "programming"
-              ],
-              "work": [
-                "programming"
-              ],
-              "principl": [
-                "programming"
-              ],
-              "of": [
-                "programming"
-              ],
-              "binari": [
-                "programming"
-              ],
-              "search": [
-                "programming"
-              ],
-              "bubbl": [
-                "programming"
-              ],
-              "best": [
-                "programming"
-              ],
-              "practic": [
-                "programming"
-              ],
-              "write": [
-                "programming"
-              ],
-              "clean": [
-                "programming"
-              ],
-              "improv": [
-                "programming"
-              ],
-              "perform": [
-                "programming"
-              ],
-              "essenti": [
-                "programming"
-              ],
-              "technolog": [
-                "programming"
-              ],
-              "rest": [
-                "programming"
-              ],
-              "api": [
-                "programming"
-              ],
-              "prevent": [
-                "programming"
-              ],
-              "sql": [
-                "programming"
-              ],
-              "inject": [
-                "programming"
-              ],
-              "attack": [
-                "programming"
-              ],
-              "secur": [
-                "programming"
-              ],
-              "vulner": [
-                "programming"
-              ],
-              "applic": [
-                "programming"
-              ],
-              "featur": [
-                "programming"
-              ],
-              "java": [
-                "programming"
-              ],
-              "rubi": [
-                "programming"
-              ],
-              "framework": [
-                "programming"
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
+              ],
+              "receit": [
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
+              ],
+              "de": [
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
+              ],
+              "um": [
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
+              ],
+              "bom": [
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
               ]
             },
             "neuralNetwork": {
               "settings": {
-                "locale": "en",
-                "tag": "nlu-en",
+                "locale": "pt",
+                "tag": "nlu-pt",
                 "keepStopwords": true,
                 "nonefeatureValue": 1,
                 "nonedeltaMultiplier": 1.2,
@@ -1236,701 +490,166 @@
                 "log": true
               },
               "features": [
-                "hi",
-                "hello",
-                "how",
-                "are",
-                "you",
-                "what",
-                "up",
-                "good",
-                "morn",
-                "afternoon",
-                "even",
-                "howdi",
-                "hey",
-                "do",
-                "there",
-                "yo",
-                "can",
-                "help",
-                "me",
-                "i",
-                "need",
-                "assist",
-                "pleas",
-                "am",
-                "stuck",
-                "could",
-                "lend",
+                "o",
+                "que",
+                "e",
+                "caf",
+                "espress",
+                "expliqu",
+                "defin",
+                "signif",
+                "latt",
+                "cappuccin",
+                "com",
+                "faz",
+                "prepar",
+                "qual",
                 "a",
-                "hand",
-                "goodby",
-                "see",
-                "later",
-                "bye",
-                "for",
-                "now",
-                "catch",
-                "thank",
-                "lot",
-                "appreci",
-                "it",
-                "your",
-                "creat",
-                "loop",
-                "in",
-                "python",
-                "is",
-                "the",
-                "syntax",
-                "javascript",
-                "explain",
-                "object-ori",
-                "program",
-                "doe",
-                "mvc",
-                "stand",
-                "web",
-                "develop",
-                "recommend",
-                "tutori",
-                "learn",
-                "react",
-                "some",
-                "beginner-friend",
-                "languag",
-                "fix",
-                "error",
-                "my",
-                "code",
-                "should",
-                "if",
-                "crash",
-                "common",
-                "data",
-                "structur",
-                "use",
-                "differ",
-                "between",
-                "array",
-                "and",
-                "link",
-                "list",
-                "implement",
-                "stack",
-                "sort",
-                "algorithm",
-                "work",
-                "principl",
-                "of",
-                "binari",
-                "search",
-                "bubbl",
-                "best",
-                "practic",
-                "write",
-                "clean",
-                "improv",
-                "perform",
-                "essenti",
-                "technolog",
-                "rest",
-                "api",
-                "prevent",
-                "sql",
-                "inject",
-                "attack",
-                "secur",
-                "vulner",
-                "applic",
-                "featur",
-                "java",
-                "rubi",
-                "framework"
+                "receit",
+                "de",
+                "um",
+                "bom"
               ],
               "intents": [
-                "greet",
-                "help",
-                "goodbye",
-                "thanks",
-                "programming"
+                "cafe_espresso",
+                "cafe_latte",
+                "cafe_cappuccino",
+                "fazer_cafe_espresso",
+                "fazer_cafe_latte",
+                "fazer_cafe_cappuccino"
               ],
               "perceptrons": [
                 [
-                  6.692763328552246,
-                  6.664087295532227,
-                  2.7004871368408203,
-                  0.8888207077980042,
-                  -3.7374980449676514,
-                  -1.263787031173706,
-                  7.869638442993164,
-                  2.2706995010375977,
-                  5.40886926651001,
-                  4.041109085083008,
-                  4.029915809631348,
-                  6.677731037139893,
-                  6.536410331726074,
-                  0.22462967038154602,
-                  0.09023519605398178,
-                  6.616567134857178,
-                  -2.6462221145629883,
-                  -4.438704967498779,
-                  -0.8691556453704834,
-                  -5.182288646697998,
-                  -1.0551936626434326,
-                  -1.5751127004623413,
-                  -3.2528598308563232,
-                  -0.3713184893131256,
-                  -0.3713184893131256,
-                  -0.660972535610199,
-                  -0.660972535610199,
-                  -3.6904070377349854,
-                  -0.660972535610199,
-                  -7.608191013336182,
-                  -1.4240199327468872,
-                  -2.7322466373443604,
-                  -2.0448427200317383,
-                  -3.607860803604126,
-                  -2.0448427200317383,
-                  -1.257837176322937,
-                  -3.9310483932495117,
-                  -0.646517276763916,
-                  -1.258928656578064,
-                  -1.258928656578064,
-                  -0.15314970910549164,
-                  -0.8229977488517761,
-                  -0.42203599214553833,
-                  -1.856251835823059,
-                  -1.6746671199798584,
-                  -4.857799053192139,
-                  -2.8008689880371094,
-                  -0.2713431715965271,
-                  -1.5902249813079834,
-                  -3.259648561477661,
-                  -0.1304163932800293,
-                  -2.2725491523742676,
-                  -0.19258742034435272,
-                  -0.19258742034435272,
-                  -0.19258742034435272,
-                  -0.9339658617973328,
-                  -0.3918217122554779,
-                  -0.28962767124176025,
-                  -0.28962767124176025,
-                  -0.28962767124176025,
-                  -2.466844320297241,
-                  -2.1780877113342285,
-                  -1.2810683250427246,
-                  -1.606444001197815,
-                  -0.10873746126890182,
-                  -0.10873746126890182,
-                  -0.21591053903102875,
-                  -0.4658666253089905,
-                  -0.06208909675478935,
-                  -0.06208909675478935,
-                  -0.06208909675478935,
-                  -0.863637387752533,
-                  -0.23934689164161682,
-                  -0.23934689164161682,
-                  -0.23934689164161682,
-                  -0.3799287676811218,
-                  -0.3799287676811218,
-                  -0.3799287676811218,
-                  -0.3799287676811218,
-                  -0.3799287676811218,
-                  -0.3799287676811218,
-                  -0.5627900958061218,
-                  -0.012629260309040546,
-                  -0.6655059456825256,
-                  -0.07921486347913742,
-                  -0.29575830698013306,
-                  -0.29575830698013306,
-                  -1.6459020376205444,
-                  -0.29575830698013306,
-                  -0.29575830698013306,
-                  -0.5382722616195679,
-                  -0.3027094602584839,
-                  -0.3027094602584839,
-                  -0.3027094602584839,
-                  -0.3027094602584839,
-                  0,
-                  0,
-                  -0.12914849817752838,
-                  -0.12914849817752838,
-                  -0.4707638621330261,
-                  -0.4707638621330261,
-                  -0.6449776291847229,
-                  -0.6449776291847229,
-                  -0.6449776291847229,
-                  -0.6449776291847229,
-                  -0.5023452639579773,
-                  -0.5023452639579773,
-                  -0.5023452639579773,
-                  -1.3020401000976562,
-                  -1.5879237651824951,
-                  -1.5859028100967407,
-                  -1.9648463726043701,
-                  7.7100024386528725
+                  2.1380844116210938,
+                  2.1380844116210938,
+                  -0.4060533940792084,
+                  0.43796223402023315,
+                  9.64832592010498,
+                  3.872239112854004,
+                  3.859369993209839,
+                  0.061912182718515396,
+                  -4.578336238861084,
+                  -4.569429397583008,
+                  -6.882821083068848,
+                  -3.5288939476013184,
+                  -3.3479833602905273,
+                  -2.4798052310943604,
+                  -2.4798052310943604,
+                  -2.4798052310943604,
+                  -2.4798052310943604,
+                  -0.5195876359939575,
+                  -0.5195876359939575,
+                  0.24649123099952305
                 ],
                 [
-                  -0.7127583026885986,
-                  -0.6963369250297546,
-                  -2.2219913005828857,
-                  -0.2479241043329239,
-                  1.8647527694702148,
-                  -0.7267494201660156,
-                  -0.1084885373711586,
-                  -0.8276746273040771,
-                  -0.6940798163414001,
-                  -0.03230772167444229,
-                  -0.02362167276442051,
-                  -0.6946660876274109,
-                  -0.699192464351654,
-                  -1.1744728088378906,
-                  -0.20814605057239532,
-                  -0.6933038830757141,
-                  1.0943495035171509,
-                  7.481590270996094,
-                  3.151874542236328,
-                  2.3981997966766357,
-                  5.069699764251709,
-                  6.124294281005859,
-                  6.1080803871154785,
-                  1.0546174049377441,
-                  1.0546174049377441,
-                  3.52994704246521,
-                  3.52994704246521,
-                  1.1366928815841675,
-                  3.52994704246521,
-                  -0.8293574452400208,
-                  -1.0508053302764893,
-                  -2.16477370262146,
-                  -0.24495761096477509,
-                  -2.9511680603027344,
-                  -0.24495761096477509,
-                  -1.0144846439361572,
-                  -3.446204423904419,
-                  -0.23651860654354095,
-                  -1.5471779108047485,
-                  -1.5471779108047485,
-                  -1.7784011363983154,
-                  -0.5259727239608765,
-                  -0.3828342854976654,
-                  -0.7501725554466248,
-                  -0.4073798954486847,
-                  -0.521151065826416,
-                  -0.5280020833015442,
-                  -0.22986450791358948,
-                  -0.08200924098491669,
-                  -1.418912649154663,
-                  -1.326892375946045,
-                  -1.5490950345993042,
-                  -0.015000763349235058,
-                  -0.015000763349235058,
-                  -0.015000763349235058,
-                  -0.015000763349235058,
-                  -0.015000763349235058,
-                  -0.6694508790969849,
-                  -0.6694508790969849,
-                  -0.6694508790969849,
-                  -0.6767687797546387,
-                  -0.04222927242517471,
-                  -0.04222927242517471,
-                  -0.04222927242517471,
-                  -0.13553716242313385,
-                  -0.13553716242313385,
-                  -0.6764013171195984,
-                  -0.5136606693267822,
-                  -0.11180852353572845,
-                  -0.11180852353572845,
-                  -0.11180852353572845,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.04027050733566284,
-                  -0.04027050733566284,
-                  -0.04027050733566284,
-                  -0.04027050733566284,
-                  -0.04027050733566284,
-                  -0.04027050733566284,
-                  -0.2699252963066101,
-                  -0.061263762414455414,
-                  -0.45614635944366455,
-                  -0.23956042528152466,
-                  -0.019277352839708328,
-                  -0.019277352839708328,
-                  -0.3594173491001129,
-                  -0.019277352839708328,
-                  -0.019277352839708328,
-                  -0.1826549917459488,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.32988858222961426,
-                  -0.32988858222961426,
-                  0,
-                  0,
-                  -0.1534327119588852,
-                  -0.1534327119588852,
-                  -0.5699216723442078,
-                  -0.5699216723442078,
-                  -0.5699216723442078,
-                  -0.5699216723442078,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.004316835664212704,
-                  -0.0013802684843540192,
-                  -0.001746847527101636,
-                  0.6943334985486039
+                  2.144664764404297,
+                  2.144664764404297,
+                  -0.4022471308708191,
+                  0.44303280115127563,
+                  -4.543820381164551,
+                  3.8786823749542236,
+                  3.863830804824829,
+                  0.060528360307216644,
+                  9.653998374938965,
+                  -4.602667808532715,
+                  -6.895087718963623,
+                  -3.5253565311431885,
+                  -3.363560676574707,
+                  -2.484344244003296,
+                  -2.484344244003296,
+                  -2.484344244003296,
+                  -2.484344244003296,
+                  -0.5450853109359741,
+                  -0.5450853109359741,
+                  0.2505386912871567
                 ],
                 [
-                  -1.8515745401382446,
-                  -1.8465648889541626,
-                  -1.0899267196655273,
-                  -1.3735793828964233,
-                  1.4582501649856567,
-                  -1.5892027616500854,
-                  -0.2696571350097656,
-                  -1.5028551816940308,
-                  -1.8408808708190918,
-                  -0.3711315393447876,
-                  -0.35600098967552185,
-                  -1.8437623977661133,
-                  -1.845712423324585,
-                  -0.4223746359348297,
-                  -0.36944061517715454,
-                  -1.837022304534912,
-                  -1.7651362419128418,
-                  -1.4552996158599854,
-                  -0.4068700075149536,
-                  -1.1143826246261597,
-                  -0.2716025412082672,
-                  -0.46436306834220886,
-                  -0.3943988084793091,
-                  -0.18049032986164093,
-                  -0.18049032986164093,
-                  -0.6046351790428162,
-                  -0.6046351790428162,
-                  -1.629265546798706,
-                  -0.6046351790428162,
-                  12.38724136352539,
-                  3.660489082336426,
-                  7.316421031951904,
-                  4.862072467803955,
-                  2.7085816860198975,
-                  4.862072467803955,
-                  3.6559841632843018,
-                  -3.311366319656372,
-                  -0.1187613382935524,
-                  -0.499273419380188,
-                  -0.499273419380188,
-                  -0.6232868432998657,
-                  -0.05272989347577095,
-                  -0.22994749248027802,
-                  -0.7310972213745117,
-                  -0.20596876740455627,
-                  -0.48755213618278503,
-                  -0.5061553120613098,
-                  -0.13767018914222717,
-                  -0.22858086228370667,
-                  -1.082274317741394,
-                  -0.5574080944061279,
-                  -0.7393071055412292,
-                  -0.4285337030887604,
-                  -0.4285337030887604,
-                  -0.4285337030887604,
-                  -0.5049962401390076,
-                  -0.5049962401390076,
-                  -0.47504106163978577,
-                  -0.47504106163978577,
-                  -0.47504106163978577,
-                  -0.70173579454422,
-                  -0.3200337588787079,
-                  -0.02582324482500553,
-                  -0.123053178191185,
-                  0,
-                  0,
-                  -0.005969037767499685,
-                  -0.2684377133846283,
-                  -0.005969037767499685,
-                  -0.005969037767499685,
-                  -0.005969037767499685,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.09587249904870987,
-                  -0.09587249904870987,
-                  -0.09587249904870987,
-                  -0.09587249904870987,
-                  -0.09587249904870987,
-                  -0.09587249904870987,
-                  -0.002358072204515338,
-                  0,
-                  -0.002358072204515338,
-                  0,
-                  -0.1087987869977951,
-                  -0.1087987869977951,
-                  -0.1087987869977951,
-                  -0.1087987869977951,
-                  -0.1087987869977951,
-                  -0.002358072204515338,
-                  -0.2684377133846283,
-                  -0.2684377133846283,
-                  -0.2684377133846283,
-                  -0.2684377133846283,
-                  0,
-                  0,
-                  -0.06678786873817444,
-                  -0.06678786873817444,
-                  0,
-                  0,
-                  -0.006712289992719889,
-                  -0.006712289992719889,
-                  -0.006712289992719889,
-                  -0.006712289992719889,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.11064998805522919,
-                  -0.08630970120429993,
-                  -0.16143624484539032,
-                  1.8528457114279338
+                  2.14250111579895,
+                  2.14250111579895,
+                  -0.4042183458805084,
+                  0.4508395493030548,
+                  -4.572483539581299,
+                  3.8758347034454346,
+                  3.8713772296905518,
+                  0.06105952709913254,
+                  -4.556065082550049,
+                  9.64564037322998,
+                  -6.890357971191406,
+                  -3.5078353881835938,
+                  -3.3790905475616455,
+                  -2.4846644401550293,
+                  -2.4846644401550293,
+                  -2.4846644401550293,
+                  -2.4846644401550293,
+                  -0.6043496131896973,
+                  -0.6043496131896973,
+                  0.25508541340426644
                 ],
                 [
-                  -0.8064245581626892,
-                  -0.6780096292495728,
-                  -1.5006088018417358,
-                  -0.45588645339012146,
-                  2.1670620441436768,
-                  -1.1537419557571411,
-                  -0.07642551511526108,
-                  -1.0074816942214966,
-                  -0.6858989000320435,
-                  -0.16984505951404572,
-                  -0.1477348357439041,
-                  -0.6582489013671875,
-                  -0.7487378120422363,
-                  -1.2703170776367188,
-                  -0.2674409747123718,
-                  -0.6374125480651855,
-                  -2.1450514793395996,
-                  0.09476307034492493,
-                  -0.7186484336853027,
-                  2.3547966480255127,
-                  -1.287623643875122,
-                  -1.8526486158370972,
-                  -1.1170263290405273,
-                  -0.5619876384735107,
-                  -0.5619876384735107,
-                  -0.8096144199371338,
-                  -0.8096144199371338,
-                  -0.34224027395248413,
-                  -0.8096144199371338,
-                  -0.608576774597168,
-                  -0.9232326745986938,
-                  -1.8415822982788086,
-                  -0.6005573272705078,
-                  0.1904200315475464,
-                  -0.6005573272705078,
-                  -0.9175704717636108,
-                  11.464038848876953,
-                  2.5751829147338867,
-                  5.6621294021606445,
-                  5.6621294021606445,
-                  1.9388326406478882,
-                  -0.5534329414367676,
-                  -0.4898146986961365,
-                  -1.0363770723342896,
-                  -0.42073488235473633,
-                  -0.5518104434013367,
-                  -0.5855125784873962,
-                  -0.38637715578079224,
-                  -0.271808385848999,
-                  -0.7481082677841187,
-                  -0.1424548178911209,
-                  -0.5652533769607544,
-                  -0.13892139494419098,
-                  -0.13892139494419098,
-                  -0.13892139494419098,
-                  -0.2227899134159088,
-                  -0.2227899134159088,
-                  -0.37751561403274536,
-                  -0.37751561403274536,
-                  -0.37751561403274536,
-                  -0.5707108378410339,
-                  -0.22929851710796356,
-                  -0.07520709186792374,
-                  -0.23795053362846375,
-                  -0.1292078047990799,
-                  -0.1292078047990799,
-                  -0.2916361093521118,
-                  -0.3345239460468292,
-                  -0.07369381189346313,
-                  -0.07369381189346313,
-                  -0.07369381189346313,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.12225381284952164,
-                  -0.12225381284952164,
-                  -0.12225381284952164,
-                  -0.12225381284952164,
-                  -0.12225381284952164,
-                  -0.12225381284952164,
-                  -0.39114484190940857,
-                  -0.0833047553896904,
-                  -0.45473262667655945,
-                  -0.13986368477344513,
-                  -0.09778070449829102,
-                  -0.09778070449829102,
-                  -0.1264788657426834,
-                  -0.09778070449829102,
-                  -0.09778070449829102,
-                  -0.2634125351905823,
-                  -0.12068633735179901,
-                  -0.12068633735179901,
-                  -0.12068633735179901,
-                  -0.12068633735179901,
-                  -0.013053408823907375,
-                  -0.013053408823907375,
-                  -0.027607427909970284,
-                  -0.027607427909970284,
-                  -0.24937961995601654,
-                  -0.24937961995601654,
-                  -0.1281856894493103,
-                  -0.1281856894493103,
-                  -0.1281856894493103,
-                  -0.1281856894493103,
-                  0,
-                  0,
-                  0,
-                  0,
-                  -0.05118201673030853,
-                  -0.030929578468203545,
-                  -0.1031002551317215,
-                  0.604031374950737
+                  -2.8965368270874023,
+                  -2.8965368270874023,
+                  0.3607727289199829,
+                  -2.1639676094055176,
+                  8.401325225830078,
+                  -4.47864294052124,
+                  -4.306718826293945,
+                  -0.9682300686836243,
+                  -5.779834270477295,
+                  -5.762171745300293,
+                  6.323556423187256,
+                  3.1437628269195557,
+                  3.178713798522949,
+                  2.289079189300537,
+                  2.289079189300537,
+                  2.289079189300537,
+                  2.289079189300537,
+                  0.03426193445920944,
+                  0.03426193445920944,
+                  -1.5699723465325968
                 ],
                 [
-                  -2.1950438022613525,
-                  -1.0252623558044434,
-                  2.6853418350219727,
-                  0.9665676355361938,
-                  -2.5636284351348877,
-                  5.39155387878418,
-                  -6.09370231628418,
-                  0.10496097058057785,
-                  -1.1032631397247314,
-                  -0.8151258230209351,
-                  -0.814034640789032,
-                  -0.7915127873420715,
-                  -3.6015288829803467,
-                  1.81257963180542,
-                  -0.178302600979805,
-                  -0.7155672311782837,
-                  3.8291242122650146,
-                  -1.498425006866455,
-                  -0.8383632302284241,
-                  2.146162986755371,
-                  -0.8645730018615723,
-                  -2.127854585647583,
-                  -0.16419687867164612,
-                  -1.1350349187850952,
-                  -1.1350349187850952,
-                  -0.751264214515686,
-                  -0.751264214515686,
-                  1.965090036392212,
-                  -0.751264214515686,
-                  -0.7104454636573792,
-                  -0.04830801486968994,
-                  -0.09677651524543762,
-                  -1.0077213048934937,
-                  -0.02581937052309513,
-                  -1.0077213048934937,
-                  -0.02431449294090271,
-                  -1.8381444215774536,
-                  -1.40266752243042,
-                  -1.4266602993011475,
-                  -1.4266602993011475,
-                  -0.32522884011268616,
-                  2.8259081840515137,
-                  -1.9169420003890991,
-                  1.064907193183899,
-                  2.9703691005706787,
-                  5.215165615081787,
-                  0.8969841599464417,
-                  -1.9545308351516724,
-                  2.954423189163208,
-                  7.150357246398926,
-                  2.513317346572876,
-                  2.6431703567504883,
-                  0.9626843929290771,
-                  0.9626843929290771,
-                  0.9626843929290771,
-                  2.2515933513641357,
-                  2.006180763244629,
-                  2.425889253616333,
-                  2.425889253616333,
-                  2.425889253616333,
-                  2.981074094772339,
-                  2.3321738243103027,
-                  1.4054090976715088,
-                  0.8244349360466003,
-                  1.716784954071045,
-                  1.716784954071045,
-                  0.22469110786914825,
-                  2.191133737564087,
-                  -1.2860136032104492,
-                  -1.2860136032104492,
-                  -1.2860136032104492,
-                  0.8365014791488647,
-                  0.5909627676010132,
-                  0.5909627676010132,
-                  0.5909627676010132,
-                  0.9208992719650269,
-                  0.9208992719650269,
-                  0.9208992719650269,
-                  0.9208992719650269,
-                  0.9208992719650269,
-                  0.9208992719650269,
-                  1.462005376815796,
-                  -0.5337562561035156,
-                  1.5014033317565918,
-                  -0.49441787600517273,
-                  0.8779900074005127,
-                  0.8779900074005127,
-                  2.012946128845215,
-                  0.8779900074005127,
-                  0.8779900074005127,
-                  1.9959222078323364,
-                  0.680486261844635,
-                  0.680486261844635,
-                  0.680486261844635,
-                  0.680486261844635,
-                  -0.20631226897239685,
-                  -0.20631226897239685,
-                  1.0433413982391357,
-                  1.0433413982391357,
-                  1.072305679321289,
-                  1.072305679321289,
-                  1.2283267974853516,
-                  1.2283267974853516,
-                  1.2283267974853516,
-                  1.2283267974853516,
-                  0.24548578262329102,
-                  0.24548578262329102,
-                  0.24548578262329102,
-                  1.341275691986084,
-                  2.9591872692108154,
-                  2.956446409225464,
-                  3.4189486503601074,
-                  0.7131143028905963
+                  -2.963679075241089,
+                  -2.963679075241089,
+                  0.2393425554037094,
+                  -2.2347614765167236,
+                  -5.681541919708252,
+                  -4.480792045593262,
+                  -4.325655937194824,
+                  -0.862199068069458,
+                  8.406988143920898,
+                  -5.821279048919678,
+                  6.377891540527344,
+                  3.1540188789367676,
+                  3.216823101043701,
+                  2.3408219814300537,
+                  2.3408219814300537,
+                  2.3408219814300537,
+                  2.3408219814300537,
+                  0.053824763745069504,
+                  0.053824763745069504,
+                  -1.5494201484852754
+                ],
+                [
+                  -2.975433588027954,
+                  -2.975433588027954,
+                  0.20649738609790802,
+                  -2.2471466064453125,
+                  -5.755011081695557,
+                  -4.459286689758301,
+                  -4.34753942489624,
+                  -0.8309054970741272,
+                  -5.707528591156006,
+                  8.38957691192627,
+                  6.394629001617432,
+                  3.1784682273864746,
+                  3.211028575897217,
+                  2.351025104522705,
+                  2.351025104522705,
+                  2.351025104522705,
+                  2.351025104522705,
+                  0.03582208231091499,
+                  0.03582208231091499,
+                  -1.5371570139779642
                 ]
               ]
             }
@@ -1941,248 +660,100 @@
     "intentDomains": {},
     "extraSentences": [
       [
-        "en",
-        "Hi"
+        "pt",
+        "O que é café espresso?"
       ],
       [
-        "en",
-        "Hello"
+        "pt",
+        "Explique café espresso."
       ],
       [
-        "en",
-        "Hi, how are you?"
+        "pt",
+        "Defina café espresso."
       ],
       [
-        "en",
-        "Whats up?"
+        "pt",
+        "O que significa espresso?"
       ],
       [
-        "en",
-        "Good morning"
+        "pt",
+        "O que é café latte?"
       ],
       [
-        "en",
-        "Good afternoon"
+        "pt",
+        "Explique café latte."
       ],
       [
-        "en",
-        "Good evening"
+        "pt",
+        "Defina café latte."
       ],
       [
-        "en",
-        "Howdy"
+        "pt",
+        "O que significa latte?"
       ],
       [
-        "en",
-        "Hey"
+        "pt",
+        "O que é café cappuccino?"
       ],
       [
-        "en",
-        "Hey, how are you doing?"
+        "pt",
+        "Explique café cappuccino."
       ],
       [
-        "en",
-        "Morning!"
+        "pt",
+        "Defina café cappuccino."
       ],
       [
-        "en",
-        "Hey there"
+        "pt",
+        "O que significa cappuccino?"
       ],
       [
-        "en",
-        "Yo"
+        "pt",
+        "Como fazer café espresso?"
       ],
       [
-        "en",
-        "Can you help me?"
+        "pt",
+        "Como preparar café espresso?"
       ],
       [
-        "en",
-        "I need assistance"
+        "pt",
+        "Qual é a receita de café espresso?"
       ],
       [
-        "en",
-        "Help please!"
+        "pt",
+        "Como fazer um bom café espresso?"
       ],
       [
-        "en",
-        "I'm stuck, can you assist?"
+        "pt",
+        "Como fazer café latte?"
       ],
       [
-        "en",
-        "Could you lend a hand?"
+        "pt",
+        "Como preparar café latte?"
       ],
       [
-        "en",
-        "Goodbye"
+        "pt",
+        "Qual é a receita de café latte?"
       ],
       [
-        "en",
-        "See you later"
+        "pt",
+        "Como fazer um bom café latte?"
       ],
       [
-        "en",
-        "Bye for now"
+        "pt",
+        "Como fazer café cappuccino?"
       ],
       [
-        "en",
-        "Catch you later"
+        "pt",
+        "Como preparar café cappuccino?"
       ],
       [
-        "en",
-        "Thank you"
+        "pt",
+        "Qual é a receita de café cappuccino?"
       ],
       [
-        "en",
-        "Thanks a lot"
-      ],
-      [
-        "en",
-        "I appreciate it"
-      ],
-      [
-        "en",
-        "Thanks for your help"
-      ],
-      [
-        "en",
-        "How do I create a loop in Python?"
-      ],
-      [
-        "en",
-        "What is the syntax for a for loop in JavaScript?"
-      ],
-      [
-        "en",
-        "Can you explain object-oriented programming?"
-      ],
-      [
-        "en",
-        "What does MVC stand for in web development?"
-      ],
-      [
-        "en",
-        "Can you recommend a good tutorial for learning React?"
-      ],
-      [
-        "en",
-        "What are some beginner-friendly programming languages?"
-      ],
-      [
-        "en",
-        "How do I fix a syntax error in my code?"
-      ],
-      [
-        "en",
-        "What should I do if my program is crashing?"
-      ],
-      [
-        "en",
-        "What are the common data structures used in programming?"
-      ],
-      [
-        "en",
-        "Explain the difference between arrays and linked lists"
-      ],
-      [
-        "en",
-        "How do I implement a stack in Python?"
-      ],
-      [
-        "en",
-        "What is a sorting algorithm?"
-      ],
-      [
-        "en",
-        "Explain the working principle of binary search"
-      ],
-      [
-        "en",
-        "How do I implement a bubble sort?"
-      ],
-      [
-        "en",
-        "What are some best practices for writing clean code?"
-      ],
-      [
-        "en",
-        "How can I improve the performance of my code?"
-      ],
-      [
-        "en",
-        "What are the essential technologies for web development?"
-      ],
-      [
-        "en",
-        "How do I create a RESTful API?"
-      ],
-      [
-        "en",
-        "How can I prevent SQL injection attacks?"
-      ],
-      [
-        "en",
-        "What are some common security vulnerabilities in web applications?"
-      ],
-      [
-        "en",
-        "What is Python?"
-      ],
-      [
-        "en",
-        "Explain Python programming language"
-      ],
-      [
-        "en",
-        "What are the features of Python?"
-      ],
-      [
-        "en",
-        "What is JavaScript?"
-      ],
-      [
-        "en",
-        "Explain JavaScript programming language"
-      ],
-      [
-        "en",
-        "What are the features of JavaScript?"
-      ],
-      [
-        "en",
-        "What is Java?"
-      ],
-      [
-        "en",
-        "Explain Java programming language"
-      ],
-      [
-        "en",
-        "What are the features of Java?"
-      ],
-      [
-        "en",
-        "What is Ruby?"
-      ],
-      [
-        "en",
-        "Explain Ruby programming language"
-      ],
-      [
-        "en",
-        "What are the features of Ruby?"
-      ],
-      [
-        "en",
-        "What is React?"
-      ],
-      [
-        "en",
-        "Explain React framework"
-      ],
-      [
-        "en",
-        "What are the features of React?"
+        "pt",
+        "Como fazer um bom café cappuccino?"
       ]
     ]
   },
@@ -2199,171 +770,35 @@
       "tag": "nlg-manager"
     },
     "responses": {
-      "en": {
-        "greet": [
+      "pt-br": {
+        "cafe_espresso": [
           {
-            "answer": "Hello buddy, my name is TSChatBot!"
-          },
-          {
-            "answer": "Hi! Im a TSChatBot!"
-          },
-          {
-            "answer": "Hey there! Im a TSChatBot!"
-          },
-          {
-            "answer": "Hey! I'm your friendly TSChatBot!"
-          },
-          {
-            "answer": "Hi there! I'm here to assist you."
-          },
-          {
-            "answer": "Hello! I'm TSChatBot, nice to meet you!"
-          },
-          {
-            "answer": "Greetings! I'm TSChatBot, how can I help you?"
-          },
-          {
-            "answer": "Hello! How can I assist you today?"
+            "answer": "O café espresso é uma bebida altamente concentrada, feita passando água quente sob pressão através de grãos de café finamente moídos."
           }
         ],
-        "help": [
+        "cafe_latte": [
           {
-            "answer": "Of course! How can I assist you?"
-          },
-          {
-            "answer": "Sure, I'm here to help. What do you need?"
-          },
-          {
-            "answer": "Absolutely! What can I do for you?"
+            "answer": "O café latte é uma bebida feita com espresso e leite vaporizado, resultando em uma bebida cremosa e suave."
           }
         ],
-        "goodbye": [
+        "cafe_cappuccino": [
           {
-            "answer": "Goodbye! Take care."
-          },
-          {
-            "answer": "See you later!"
-          },
-          {
-            "answer": "Farewell! Have a great day."
+            "answer": "O café cappuccino é uma bebida italiana feita com espresso, leite vaporizado e espuma de leite, conhecida por sua textura cremosa e sabor equilibrado."
           }
         ],
-        "thanks": [
+        "fazer_cafe_espresso": [
           {
-            "answer": "You're welcome!"
-          },
-          {
-            "answer": "No problem, happy to help!"
-          },
-          {
-            "answer": "Glad I could assist!"
+            "answer": "Para fazer café espresso, você precisa moer grãos de café finamente, preencher o porta-filtro da máquina de espresso, extrair o café sob pressão e servir imediatamente."
           }
         ],
-        "programming": [
+        "fazer_cafe_latte": [
           {
-            "answer": "In Python, you can create a loop using the \"for\" or \"while\" statement. For example: for i in range(5):"
-          },
+            "answer": "Para fazer café latte, prepare um espresso, aqueça leite vaporizado e adicione ao espresso, resultando em uma bebida cremosa e suave."
+          }
+        ],
+        "fazer_cafe_cappuccino": [
           {
-            "answer": "In JavaScript, the syntax for a \"for\" loop is: for (let i = 0; i < array.length; i++) { // code here }"
-          },
-          {
-            "answer": "Object-oriented programming (OOP) is a programming paradigm based on the concept of \"objects\", which can contain data and code."
-          },
-          {
-            "answer": "MVC stands for Model-View-Controller, a design pattern commonly used in web development to separate concerns and organize code."
-          },
-          {
-            "answer": "Sure! A great tutorial for learning React is the official React documentation at https://reactjs.org/docs/getting-started.html"
-          },
-          {
-            "answer": "Some beginner-friendly programming languages include Python, JavaScript, and Ruby."
-          },
-          {
-            "answer": "To fix a syntax error, carefully review the code around the reported error and check for missing or misplaced syntax elements."
-          },
-          {
-            "answer": "If your program is crashing, try debugging it by commenting out sections of code or using a debugger to identify the source of the issue."
-          },
-          {
-            "answer": "Common data structures include arrays, linked lists, stacks, queues, trees, and graphs."
-          },
-          {
-            "answer": "Arrays store elements of the same type in contiguous memory locations, while linked lists use pointers to connect elements stored in non-contiguous memory locations."
-          },
-          {
-            "answer": "To implement a stack in Python, you can use a list and its built-in methods like append() and pop()."
-          },
-          {
-            "answer": "A sorting algorithm is an algorithm that puts elements of a list in a certain order."
-          },
-          {
-            "answer": "Binary search is a search algorithm that finds the position of a target value within a sorted array."
-          },
-          {
-            "answer": "Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order."
-          },
-          {
-            "answer": "Some best practices for writing clean code include following consistent naming conventions, writing modular and reusable code, and documenting your code effectively."
-          },
-          {
-            "answer": "To improve the performance of your code, you can optimize algorithms, minimize resource usage, and use efficient data structures."
-          },
-          {
-            "answer": "Essential technologies for web development include HTML, CSS, JavaScript, and a server-side language such as Python, Ruby, or Node.js."
-          },
-          {
-            "answer": "To create a RESTful API, you can use frameworks like Express.js for Node.js or Flask for Python. Design endpoints that represent resources, use HTTP methods to perform actions on these resources, and ensure statelessness and scalability."
-          },
-          {
-            "answer": "To prevent SQL injection attacks, use parameterized queries, input validation, and prepared statements."
-          },
-          {
-            "answer": "Common security vulnerabilities in web applications include SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), and insecure authentication and session management."
-          },
-          {
-            "answer": "Python is a high-level, interpreted programming language known for its simplicity and readability."
-          },
-          {
-            "answer": "Python is a versatile programming language used for web development, data analysis, artificial intelligence, and more."
-          },
-          {
-            "answer": "Features of Python include dynamic typing, automatic memory management, and a large standard library."
-          },
-          {
-            "answer": "JavaScript is a high-level, interpreted programming language primarily used for web development."
-          },
-          {
-            "answer": "JavaScript allows for interactive web pages and dynamic content, making it an essential part of web development."
-          },
-          {
-            "answer": "Features of JavaScript include event-driven programming, prototype-based object orientation, and support for asynchronous programming."
-          },
-          {
-            "answer": "Java is a high-level, object-oriented programming language known for its platform independence and robustness."
-          },
-          {
-            "answer": "Java is widely used for developing desktop, web, and mobile applications, as well as enterprise software."
-          },
-          {
-            "answer": "Features of Java include automatic memory management, strong type checking, and a large ecosystem of libraries and frameworks."
-          },
-          {
-            "answer": "Ruby is a high-level, interpreted programming language known for its simplicity and productivity."
-          },
-          {
-            "answer": "Ruby emphasizes developer happiness and follows the principle of least surprise, aiming for intuitive and readable code."
-          },
-          {
-            "answer": "Features of Ruby include dynamic typing, mixins, and a strong focus on object-oriented programming."
-          },
-          {
-            "answer": "React is a JavaScript library for building user interfaces, developed by Facebook."
-          },
-          {
-            "answer": "React allows developers to create reusable UI components and build complex UIs efficiently."
-          },
-          {
-            "answer": "Features of React include virtual DOM for optimal performance, component-based architecture, and a rich ecosystem of tools and libraries."
+            "answer": "Para fazer café cappuccino, prepare um espresso, aqueça leite vaporizado, adicione espuma de leite e sirva com uma camada de espuma por cima."
           }
         ]
       }

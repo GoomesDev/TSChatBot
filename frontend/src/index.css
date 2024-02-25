@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #070F2B;
+  background-color: #92C7CF;
 }
 
 code {
@@ -21,7 +21,7 @@ div::-webkit-scrollbar {
 }
 
 div::-webkit-scrollbar-thumb {
-  background-color: #535C91;
+  background-color: #E5E1DA;
   border-radius: 10px;
 }
 

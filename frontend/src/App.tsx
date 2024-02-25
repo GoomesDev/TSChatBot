@@ -1,12 +1,13 @@
-import ChatBot from "./components/ChatBox"
+import ChatBot from "./components/chatbot/ChatBox"
+import Home from "./HomeExample"
 
 function App() {
 
   return (
     <>
-      <ChatBot />
+      <Home />
     </>
-  );
+  )
 }
 
 export default App
