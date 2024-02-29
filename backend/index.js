@@ -18,7 +18,7 @@ app.post('/run', async (req, res) => {
         res.json({ answer: response.answer })
     } catch {
         console.error(error)
-        res.status(500).json({ error: 'Error' })
+        res.json({ answer: response.answer })
     }
 })
 

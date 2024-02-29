@@ -11,11 +11,10 @@ import {
 } from "@mui/material"
 import SendIcon from '@mui/icons-material/Send'
 import axios from "axios"
-import { transform } from "typescript";
+import './style.css'
 
-interface ChatResponse {
-  answer: string;
-}
+// Esquema de cores
+
 
 const paperStyle = {
     width: '25%',
@@ -28,7 +27,6 @@ const paperStyle = {
     justifyContent: 'flex-end',
     alignItems: 'center',
     gap: '10px',
-    borderRadius: '10px',
     bottom: '100px',
     right: '45px',
     zIndex: 1,
@@ -39,7 +37,7 @@ const paperStyle = {
 const textBar = {
     width: '98%',
     background: '#3895d3',
-    borderRadius: '10px',
+    borderRadius: '4px',
     marginBottom: '5px',
     outlined: 'none',
     border: 'none',
@@ -90,28 +88,43 @@ const botIcon = {
   boxShadow: '0px 0px 3px 0px',
 }
 
+const userAnimation = {
+  animation: 'fadeInOut 0.3s ease-in',
+}
+
+const chatAnimation = {
+  animation: 'fadeInOut 0.5s ease-in',
+}
+
 const ChatBot = () => {
   const [input, setInput] = useState('')
   const [responses, setResponses] = useState<string[]>([])
   const [messagesSent, setMessagesSent] = useState<string[]>([])
   const chatAreaRef = useRef<HTMLDivElement>(null)
   const [open, setOpen] = useState(false)
+  const [newBalloonIndex, setNewBalloonIndex] = useState<number | null>(null)
 
   const fetchData = async() => {
     try {
       const response = await axios.post('http://localhost:8000/run', { input })
       console.log(response.data)
       const { answer } = response.data
-      setResponses(prevResponses => [...prevResponses, answer])
       setMessagesSent(prevMessagesSent => [...prevMessagesSent, input])
+      answer ? 
+        setResponses(prevResponses => [...prevResponses, answer])
+        :
+        setResponses(prevResponses => [...prevResponses, 'Desculpe, não entendi o que quis dizer...'])
     } catch {
-      console.log('Error')
+      console.log('Erro na requisição.')
     }
   }
 
   const runChatBot = async() => {
+    if (!input) return
+  
     await fetchData()
     setInput('')
+    setNewBalloonIndex(responses.length)
   }
 
   useEffect(() => {
@@ -135,10 +148,19 @@ const ChatBot = () => {
             <div ref={chatAreaRef} style={chatArea}>
             {responses.map((response, index) => (
               <React.Fragment key={`message-response-${index}`}>
-                <div style={userBalloon}>
+                <div style={
+                    index !== newBalloonIndex ? userBalloon : 
+                  { ...userBalloon,
+                    ...userAnimation,
+                  }}
+                >
                   {messagesSent[index]}
                 </div>
-                <div style={chatBalloon}>
+                <div style={
+                    index !== newBalloonIndex ? chatBalloon : 
+                  { ...chatBalloon,
+                    ...chatAnimation,
+                  }}>
                 {response}
               </div>
             </React.Fragment>
@@ -151,6 +173,11 @@ const ChatBot = () => {
                 sx={textBar}
                 onChange={e => setInput(e.target.value)}
                 value={input}
+                onKeyDown={e => {
+                  if (e.key === 'Enter') {
+                      runChatBot();
+                  }
+                }}
                 InputProps={{
                     endAdornment: (
                       <InputAdornment position="end">
