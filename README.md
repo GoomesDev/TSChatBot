@@ -4,7 +4,7 @@
 <h2>Project Description</h2>
 A floating chatbot made with <b>TYPESCRIPT</b> and <b>Material UI</b>, with the aim of maximizing user interaction with the website.
 <br/>
-This version is powered by <a href=“https://github.com/GoomesDev/CoffeeRobot“><b>CoffeeRobot</b></a>.
+This version is powered by <a href='https://github.com/GoomesDev/CoffeeRobot'><b>CoffeeRobot</b></a>.
 
 <h2>Features so Far</h2>
 <ul>
