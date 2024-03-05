@@ -1,4 +1,4 @@
-<h1 align="center">☕ TSChatBot ☕</h1>
+<h1 align="center">💬 TSChatBot 💬</h1>
 <img loading="lazy" src="https://img.shields.io/badge/version%20-%201.0%20-%20blue" />
 
 <h2>Project Description</h2>
