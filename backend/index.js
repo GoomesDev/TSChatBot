@@ -1,4 +1,3 @@
-require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const { NlpManager } = require('node-nlp')
@@ -16,12 +15,11 @@ app.post('/run', async (req, res) => {
         const { input } = req.body
         let response = await manager.process('pt-br', input)
         res.json({ answer: response.answer })
-    } catch {
-        console.error(error)
-        res.json({ answer: response.answer })
+    } catch (eror){
+        res.status(500).json({ error: 'Ocorreu um erro ao processar a requisição.' })
     }
 })
 
 app.listen(port, () => {
-    console.log(`Servidor Express rodando na porta ${port}`)
+    console.log(`TSChatBot rodando na porta ${port}`)
 })

@@ -7,20 +7,27 @@ import {
     Paper,
     TextField,
     InputAdornment, 
-    IconButton
+    IconButton,
+    styled
 } from "@mui/material"
 import SendIcon from '@mui/icons-material/Send'
 import axios from "axios"
 import './style.css'
 
-// Esquema de cores
+const colorBg = process.env.REACT_APP_BG
+const bgTextBar = process.env.REACT_APP_BG_TEXT_BAR
+const fontTextBar = process.env.REACT_APP_FONT_TEXT_BAR
+const bgUserBalloon = process.env.REACT_APP_BG_USER_BALLOON
+const fontUserBalloon = process.env.REACT_APP_FONT_USER_BALLOON
+const bgBotBalloon = process.env.REACT_APP_BG_BOT_BALLOON
+const fontBotBalloon = process.env.REACT_APP_FONT_BOT_BALLOON
+const bgIcon = process.env.REACT_APP_BG_ICON
 
-
-const paperStyle = {
+const PaperStyled = styled(Paper)(({ theme }) => ({    
     width: '25%',
     height: '400px',
     position: 'absolute' as 'absolute',
-    background: '#FBF9F1',
+    background: colorBg,
     color: '#000',
     display: 'flex',
     flexDirection: 'column',
@@ -31,12 +38,15 @@ const paperStyle = {
     right: '45px',
     zIndex: 1,
     boxShadow: '1px 1px 3px 0px',
-    transform: 'scale(0)'
-}
+    transform: 'scale(0)',
+    padding: '3px',
+    minWidth: '234px'
+}))
 
-const textBar = {
+const TextBar = styled(TextField)({
     width: '98%',
-    background: '#3895d3',
+    background: bgTextBar,
+    color: fontTextBar,
     borderRadius: '4px',
     marginBottom: '5px',
     outlined: 'none',
@@ -46,7 +56,7 @@ const textBar = {
     justifyContent: 'center',
     boxSizing: 'border-box',
     padding: '8px'
-}
+})
 
 const chatArea = {
     width: '98%',
@@ -60,25 +70,26 @@ const chatArea = {
 
 const chatBalloon = {
   maxWidth: '60%',
-  background: '#3895d3',
+  background: bgBotBalloon,
   borderRadius: '10px',
   padding: '10px',
   marginBottom: '6px',
+  color: fontBotBalloon
 }
 
 const userBalloon = {
   ...chatBalloon,
   alignSelf: 'flex-end',
   marginRight: '4px',
-  background: '#E5E1DA',
-  color: '#000',
+  background: bgUserBalloon,
+  color: fontUserBalloon,
 }
 
 const botIcon = {
   width: '68px',
   height: '68px',
   borderRadius: '34px',
-  backgroundColor: '#fff',
+  backgroundColor: bgIcon,
   backgroundImage: `url('/bot.png')`,
   backgroundSize: 'cover' as 'cover',
   position: 'absolute' as 'absolute',
@@ -115,7 +126,7 @@ const ChatBot = () => {
         :
         setResponses(prevResponses => [...prevResponses, 'Desculpe, não entendi o que quis dizer...'])
     } catch {
-      console.log('Erro na requisição.')
+      setResponses(prevResponses => [...prevResponses, 'Ocorreu um erro na requisição do servidor.'])
     }
   }
 
@@ -139,8 +150,7 @@ const ChatBot = () => {
           style={botIcon} 
           onClick={() => open ? setOpen(false) : setOpen(true)}
         />
-        <Paper sx={{
-          ...paperStyle,
+        <PaperStyled sx={{
           transform: open ? 'scale(1)' : 'scale(0)',
           transformOrigin: 'bottom right',
           transition: 'transform 0.3s'
@@ -167,10 +177,9 @@ const ChatBot = () => {
           ))}
             </div>
 
-            <TextField
+            <TextBar
                 placeholder="Qual a sua dúvida sobre café?"
                 variant="standard"
-                sx={textBar}
                 onChange={e => setInput(e.target.value)}
                 value={input}
                 onKeyDown={e => {
@@ -192,7 +201,7 @@ const ChatBot = () => {
                     disableUnderline: true,
                   }}
             />
-        </Paper>
+        </PaperStyled>
       </>
     )
 }
