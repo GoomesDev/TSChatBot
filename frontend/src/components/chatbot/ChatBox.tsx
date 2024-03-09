@@ -118,13 +118,20 @@ const ChatBot = () => {
   const fetchData = async() => {
     try {
       const response = await axios.post('http://localhost:8000/run', { input })
-      console.log(response.data)
+      console.log('Respostas', response.data)
       const { answer } = response.data
       setMessagesSent(prevMessagesSent => [...prevMessagesSent, input])
-      answer ? 
-        setResponses(prevResponses => [...prevResponses, answer])
-        :
-        setResponses(prevResponses => [...prevResponses, 'Desculpe, não entendi o que quis dizer...'])
+      if (answer) {
+        if (Array.isArray(answer)) {
+
+            const randomIndex = Math.floor(Math.random() * answer.length)
+            setResponses(prevResponses => [...prevResponses, answer[randomIndex]])
+        } else {
+            setResponses(prevResponses => [...prevResponses, answer])
+        }
+      } else {
+          setResponses(prevResponses => [...prevResponses, 'Desculpe, não entendi o que quis dizer...'])
+      }
     } catch {
       setResponses(prevResponses => [...prevResponses, 'Ocorreu um erro na requisição do servidor.'])
     }
